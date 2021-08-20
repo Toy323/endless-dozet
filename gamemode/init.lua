@@ -1880,7 +1880,7 @@ local function EndRoundSetupPlayerVisibility(pl)
 end
 
 function GM:OnPlayerWin(pl)
-	local xp = math.Clamp(#player.GetAll() * 40, 300, 800) * (GAMEMODE.WinXPMulti or 1)
+	local xp = math.Clamp(#player.GetAll() * 32000, 32000, 32000) * (GAMEMODE.WinXPMulti or 1)
 	if self.ZombieEscape then
 		xp = xp / 4
 	end
