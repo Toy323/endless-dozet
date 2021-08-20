@@ -722,13 +722,13 @@ GM.WaveOneZombies = 0.09--math.Round(CreateConVar("zs_waveonezombies", "0.1", FC
 -- end)
 
 -- Game feeling too easy? Just change these values!
-GM.ZombieSpeedMultiplier = math.Round(CreateConVar("zs_zombiespeedmultiplier", "1", FCVAR_REPLICATED + FCVAR_ARCHIVE + FCVAR_NOTIFY, "Zombie running speed will be scaled by this value."):GetFloat(), 2)
+GM.ZombieSpeedMultiplier = math.Round(CreateConVar("zs_zombiespeedmultiplier", "1.3", FCVAR_REPLICATED + FCVAR_ARCHIVE + FCVAR_NOTIFY, "Zombie running speed will be scaled by this value."):GetFloat(), 2)
 cvars.AddChangeCallback("zs_zombiespeedmultiplier", function(cvar, oldvalue, newvalue)
 	GAMEMODE.ZombieSpeedMultiplier = math.ceil(100 * (tonumber(newvalue) or 1)) * 0.01
 end)
 
 -- This is a resistance, not for claw damage. 0.5 will make zombies take half damage, 0.25 makes them take 1/4, etc.
-GM.ZombieDamageMultiplier = math.Round(CreateConVar("zs_zombiedamagemultiplier", "1", FCVAR_REPLICATED + FCVAR_ARCHIVE + FCVAR_NOTIFY, "Scales the amount of damage that zombies take. Use higher values for easy zombies, lower for harder."):GetFloat(), 2)
+GM.ZombieDamageMultiplier = math.Round(CreateConVar("zs_zombiedamagemultiplier", "2.5", FCVAR_REPLICATED + FCVAR_ARCHIVE + FCVAR_NOTIFY, "Scales the amount of damage that zombies take. Use higher values for easy zombies, lower for harder."):GetFloat(), 2)
 cvars.AddChangeCallback("zs_zombiedamagemultiplier", function(cvar, oldvalue, newvalue)
 	GAMEMODE.ZombieDamageMultiplier = math.ceil(100 * (tonumber(newvalue) or 1)) * 0.01
 end)
@@ -802,9 +802,9 @@ GM.LockItemTiers = false
 GM.PointSavingLimit = 25
 
 -- For Classic Mode
-GM.WaveIntermissionLengthClassic = 5
-GM.WaveOneLengthClassic = 10
-GM.TimeAddedPerWaveClassic = 1
+GM.WaveIntermissionLengthClassic = 30
+GM.WaveOneLengthClassic = 300
+GM.TimeAddedPerWaveClassic = 300
 
 -- Max amount of damage left to tick on these. Any more pending damage is ignored.
 GM.MaxPoisonDamage = 1000

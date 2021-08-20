@@ -21,7 +21,7 @@ cvars.AddChangeCallback("zs_bosszombies", function(cvar, oldvalue, newvalue)
 	GAMEMODE.BossZombies = tonumber(newvalue) == 1
 end)
 
-GM.OutnumberedHealthBonus = CreateConVar("zs_outnumberedhealthbonus", "4", FCVAR_ARCHIVE + FCVAR_NOTIFY, "Give zombies some extra maximum health if there are less than or equal to this many zombies. 0 to disable."):GetInt()
+GM.OutnumberedHealthBonus = CreateConVar("zs_outnumberedhealthbonus", "8", FCVAR_ARCHIVE + FCVAR_NOTIFY, "Give zombies some extra maximum health if there are less than or equal to this many zombies. 0 to disable."):GetInt()
 cvars.AddChangeCallback("zs_outnumberedhealthbonus", function(cvar, oldvalue, newvalue)
 	GAMEMODE.OutnumberedHealthBonus = tonumber(newvalue) or 0
 end)
@@ -41,7 +41,7 @@ cvars.AddChangeCallback("zs_babymode", function(cvar, oldvalue, newvalue)
 	GAMEMODE:SetBabyMode(tonumber(newvalue) == 1)
 end)
 
-GM.EndWaveHealthBonus = CreateConVar("zs_endwavehealthbonus", "30", FCVAR_ARCHIVE + FCVAR_NOTIFY, "Humans will get this much health after every wave. 0 to disable."):GetInt()
+GM.EndWaveHealthBonus = CreateConVar("zs_endwavehealthbonus", "70", FCVAR_ARCHIVE + FCVAR_NOTIFY, "Humans will get this much health after every wave. 0 to disable."):GetInt()
 cvars.AddChangeCallback("zs_endwavehealthbonus", function(cvar, oldvalue, newvalue)
 	GAMEMODE.EndWaveHealthBonus = tonumber(newvalue) or 0
 end)
@@ -86,7 +86,7 @@ cvars.AddChangeCallback("zs_maxdroppeditems", function(cvar, oldvalue, newvalue)
 	GAMEMODE.MaxDroppedItems = tonumber(newvalue) or 48
 end)]]
 
-GM.NailHealthPerRepair = CreateConVar("zs_nailhealthperrepair", "10", FCVAR_ARCHIVE + FCVAR_NOTIFY, "How much health a nail gets when being repaired."):GetInt()
+GM.NailHealthPerRepair = CreateConVar("zs_nailhealthperrepair", "17", FCVAR_ARCHIVE + FCVAR_NOTIFY, "How much health a nail gets when being repaired."):GetInt()
 cvars.AddChangeCallback("zs_nailhealthperrepair", function(cvar, oldvalue, newvalue)
 	GAMEMODE.NailHealthPerRepair = tonumber(newvalue) or 1
 end)
@@ -96,7 +96,7 @@ cvars.AddChangeCallback("zs_nopropdamagefromhumanmelee", function(cvar, oldvalue
 	GAMEMODE.NoPropDamageFromHumanMelee = tonumber(newvalue) == 1
 end)
 
-GM.MedkitPointsPerHealth = 5--[[CreateConVar("zs_medkitpointsperhealth", "8", FCVAR_ARCHIVE + FCVAR_NOTIFY, "Specifies the amount of healing for players to be given a point. For use with the medkit and such."):GetInt()
+GM.MedkitPointsPerHealth = 20--[[CreateConVar("zs_medkitpointsperhealth", "8", FCVAR_ARCHIVE + FCVAR_NOTIFY, "Specifies the amount of healing for players to be given a point. For use with the medkit and such."):GetInt()
 cvars.AddChangeCallback("zs_medkitpointsperhealth", function(cvar, oldvalue, newvalue)
 	GAMEMODE.MedkitPointsPerHealth = tonumber(newvalue) or 1
 end)]]
