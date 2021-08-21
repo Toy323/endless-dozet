@@ -1082,6 +1082,7 @@ GM:SetSkillModifierFunction(SKILLMOD_DAMAGE, function(pl, amount)
 	pl.WEAPON_MODIFIER_DAMAGE = math.Clamp(amount + 1.0, 0.0, 100.0)
 end)
 
+
 GM:SetSkillModifierFunction(SKILLMOD_PROJECTILE_DAMAGE_TAKEN_MUL, GM:MkGenericMod("ProjDamageTakenMul"))
 GM:SetSkillModifierFunction(SKILLMOD_EXP_DAMAGE_RADIUS, GM:MkGenericMod("ExpDamageRadiusMul"))
 GM:SetSkillModifierFunction(SKILLMOD_WEAPON_WEIGHT_SLOW_MUL, GM:MkGenericMod("WeaponWeightSlowMul"))
