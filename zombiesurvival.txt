@@ -1,4 +1,4 @@
-"endlesszs"
+"zombiesurvival"
 {
 	"base"				"base"
 	"title"				"Endless Survival"
