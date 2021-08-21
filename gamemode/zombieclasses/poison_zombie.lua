@@ -9,7 +9,7 @@ CLASS.Model = Model("models/Zombie/Poison.mdl")
 
 CLASS.Wave = 4 / 6
 
-CLASS.Health = 520
+CLASS.Health = 1200
 CLASS.Speed = 160
 CLASS.JumpPower = DEFAULT_JUMP_POWER * 1.612
 CLASS.SWEP = "weapon_zs_poisonzombie"

@@ -7,7 +7,7 @@ CLASS.TranslationName = "class_noxiousghoul"
 CLASS.Description = "description_noxiousghoul"
 CLASS.Help = "controls_noxiousghoul"
 
-CLASS.Health = 510
+CLASS.Health = 1800
 CLASS.Speed = 240
 
 CLASS.Points = CLASS.Health/GM.HumanoidZombiePointRatio

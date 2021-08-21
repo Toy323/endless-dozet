@@ -5,7 +5,7 @@ CLASS.TranslationName = "class_tormented_boss"
 CLASS.Description = "description_tormented_wraith"
 CLASS.Help = "controls_tormented_wraith"
 
-CLASS.Health = 2100
+CLASS.Health = 7900
 CLASS.Points = CLASS.Health/GM.NoHeadboxZombiePointRatio
 CLASS.Speed = 110
 
@@ -18,13 +18,13 @@ function CLASS:Move(pl, move)
 	if not wep.GetTormented then return end
 
 	if CurTime() < wep:GetTormented() + 2 then
-		move:SetMaxSpeed(225)
-		move:SetMaxClientSpeed(225)
+		move:SetMaxSpeed(900)
+		move:SetMaxClientSpeed(900)
 	end
 
 	if pl:KeyDown(IN_SPEED) then
-		move:SetMaxSpeed(90)
-		move:SetMaxClientSpeed(90)
+		move:SetMaxSpeed(50)
+		move:SetMaxClientSpeed(50)
 	end
 end
 
@@ -76,7 +76,7 @@ function CLASS:PrePlayerDraw(pl)
 	if alpha == 0 then return true end
 
 	render.SetBlend(alpha)
-	render.SetColorModulation(0.025, 0.15, 0.065)
+	render.SetColorModulation(0.002, 0.06, 0.006)
 	render.SuppressEngineLighting(true)
 end
 if SERVER then

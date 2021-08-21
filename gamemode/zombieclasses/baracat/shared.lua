@@ -17,7 +17,7 @@ CLASS.Points = 5
 
 CLASS.SWEP = "weapon_zs_baracat"
 
-CLASS.Health = 560
+CLASS.Health = 800
 CLASS.Speed = 410
 CLASS.JumpPower = 400
 

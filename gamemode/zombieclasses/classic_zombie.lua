@@ -8,7 +8,7 @@ CLASS.Hidden = true
 CLASS.Name = "Classic Zombie"
 CLASS.TranslationName = "class_classic_zombie"
 
-CLASS.Health = 150
+CLASS.Health = 450
 CLASS.Speed = 200
 CLASS.Points = CLASS.Health/GM.HumanoidZombiePointRatio
 

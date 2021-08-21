@@ -17,7 +17,7 @@ CLASS.Wave = 2 / 6
 CLASS.Unlocked = false
 CLASS.Hidden = false
 
-CLASS.Health = 210
+CLASS.Health = 600
 CLASS.Speed = 230
 CLASS.JumpPower = 160
 

@@ -14,13 +14,13 @@ CLASS.OverrideModel = Model("models/player/zombie_lacerator2.mdl")
 if SERVER then
 function CLASS:ProcessDamage(pl, dmginfo)
 	if dmginfo:GetInflictor().IsMelee then
-		dmginfo:SetDamage(dmginfo:GetDamage() / 5)
+		dmginfo:SetDamage(dmginfo:GetDamage() / 50)
 	end
 end
 end
 
-CLASS.Wave = 3 
-CLASS.Health = 350
+CLASS.Wave = 1
+CLASS.Health = 5000
 CLASS.Speed = 190
 
 CLASS.VoicePitch = 0.65

@@ -280,6 +280,12 @@ GM:AddStartingItem("magnet",			ITEMCAT_TRINKETS,		25,				"trinket_magnet").SubCa
 GM:AddStartingItem("arsenalpack",		ITEMCAT_TRINKETS,		35,				"trinket_arsenalpack").SubCategory =			ITEMSUBCAT_TRINKETS_SUPPORT
 GM:AddStartingItem("resupplypack",		ITEMCAT_TRINKETS,		35,				"trinket_resupplypack").SubCategory =			ITEMSUBCAT_TRINKETS_SUPPORT
 
+
+GM:AddStartingItem("futureblu",			ITEMCAT_SUPER,			200,			"trinket_futureblu")
+GM:AddStartingItem("sman",			ITEMCAT_SUPER,			200,			"trinket_sman")
+GM:AddStartingItem("stutor",			ITEMCAT_SUPER,			200,			"trinket_stutor")
+GM:AddStartingItem("gstore",			ITEMCAT_SUPER,			200,			"trinket_gstore")
+
 GM:AddStartingItem("stone",				ITEMCAT_OTHER,			10,				"weapon_zs_stone")
 GM:AddStartingItem("grenade",			ITEMCAT_OTHER,			30,				"weapon_zs_grenade")
 GM:AddStartingItem("flashbomb",			ITEMCAT_OTHER,			15,				"weapon_zs_flashbomb")
